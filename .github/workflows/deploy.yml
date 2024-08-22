@@ -26,6 +26,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./dist  # ビルドされたファイルが出力されるディレクトリ
           cname: ''  # CNAMEファイルが必要な場合は、ドメイン名を指定します。無ければ空のままで大丈夫です
