@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.1.7
+        uses: actions/checkout@v3  # 最新のバージョンに更新
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.0.3
+        uses: actions/setup-node@v3  # 最新のバージョンに更新
         with:
           node-version: '20'  # Node.js 20 を指定
 
@@ -28,3 +28,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist  # ビルドされたファイルが出力されるディレクトリ
+          cname: ''  # CNAMEファイルが必要な場合は、ドメイン名を指定します。無ければ空のままで大丈夫です
