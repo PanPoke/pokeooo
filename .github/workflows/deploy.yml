@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3  # 最新のバージョンに更新
+        uses: actions/checkout@v4.1.7  # 最新のバージョンに更新
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3  # 最新のバージョンに更新
+        uses: actions/setup-node@v4.0.3  # 最新のバージョンに更新
         with:
           node-version: '20'  # Node.js 20 を指定
 
